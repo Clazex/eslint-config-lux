@@ -17,5 +17,36 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable sort-vars*/
 
-// This config includes the grammatical and stylistic rules
-module.exports = { extends: ["./base.js", "./style.js"] };
+const o = "off",
+	w = "warn",
+	e = "error",
+	options = {};
+
+// This config provides a preset for the Quasar Framework
+module.exports = {
+	parserOptions: { sourceType: "module" },
+
+	extends: [
+		"./index.js",
+		"./es6.js",
+		"./import.js",
+		"./vue.js"
+	],
+
+	env: { browser: true },
+
+	globals: {
+		ga: true,
+		cordova: true,
+		__statics: true,
+		process: true,
+		Capacitor: true,
+		chrome: true
+	},
+
+	rules: {
+		// Allow debugger during development only
+		"no-console": process.env.NODE_ENV === "production" ? w : o,
+		"no-debugger": process.env.NODE_ENV === "production" ? w : o
+	}
+};

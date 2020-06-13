@@ -17,5 +17,14 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable sort-vars*/
 
-// This config includes the grammatical and stylistic rules
-module.exports = { extends: ["./base.js", "./style.js"] };
+const o = "off",
+	w = "warn",
+	e = "error",
+	options = {};
+
+// This config provides rules for eslint-plugin-promise
+module.exports = {
+	plugins: ["promise"],
+
+	extends: ["plugin:promise/recommended"]
+};

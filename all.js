@@ -17,5 +17,14 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable sort-vars*/
 
-// This config includes the grammatical and stylistic rules
-module.exports = { extends: ["./base.js", "./style.js"] };
+// This config includes all other configs
+module.exports = {
+	extends: [
+		"./index.js",
+		"./es6.js",
+		"./import.js",
+		"./node.js",
+		"./promise.js",
+		"./vue.js"
+	]
+};
