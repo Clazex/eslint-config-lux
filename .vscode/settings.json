@@ -1,0 +1,36 @@
+{
+	"eslint.validate": [
+		"javascript"
+	],
+	"cSpell.words": [
+		"camelcase",
+		"iife",
+		"isnan",
+		"linebreak",
+		"sciencmine",
+		"editorconfig",
+		"eslintconfig",
+		"eslintconfig",
+		"precommit",
+		"prebuild",
+		"eqeqeq",
+		"cyclomatic",
+		"vetur",
+		"uncategorized"
+	],
+	"editor.formatOnPaste": true,
+	"editor.formatOnSave": true,
+	"editor.codeActionsOnSave": {
+		"source.fixAll": true
+	},
+	"javascript.format.insertSpaceBeforeFunctionParenthesis": false,
+	"javascript.format.placeOpenBraceOnNewLineForControlBlocks": false,
+	"javascript.format.placeOpenBraceOnNewLineForFunctions": false,
+	"typescript.format.insertSpaceBeforeFunctionParenthesis": false,
+	"typescript.format.placeOpenBraceOnNewLineForControlBlocks": false,
+	"typescript.format.placeOpenBraceOnNewLineForFunctions": false,
+	"editor.insertSpaces": false,
+	"editor.detectIndentation": false,
+	"eslint.lintTask.enable": true,
+	"files.trimTrailingWhitespace": true
+}
