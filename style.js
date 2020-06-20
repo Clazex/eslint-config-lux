@@ -47,7 +47,12 @@ const o = "off",
 
 	computed = {
 		paddingLineBetweenStatements: options.paddedStatements.reduce((array, i) => {
-			let newArray = [...array, { blankLine: "always", prev: i, next: "*" }, { blankLine: "always", prev: "*", next: i }];
+			let newArray = [
+				...array,
+				{ blankLine: "always", prev: i, next: "*" },
+				{ blankLine: "always", prev: "*", next: i },
+				{ blankLine: "any", prev: i, next: i }
+			];
 
 			return newArray;
 		}, [])
