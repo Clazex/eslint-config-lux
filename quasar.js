@@ -28,7 +28,7 @@ module.exports = {
 
 	extends: ["./import.js", "./vue.js"],
 
-	env: { browser: true },
+	env: { browser: true, commonjs: true },
 
 	globals: {
 		ga: true,
