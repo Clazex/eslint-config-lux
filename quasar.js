@@ -26,12 +26,7 @@ const o = "off",
 module.exports = {
 	parserOptions: { sourceType: "module" },
 
-	extends: [
-		"./index.js",
-		"./es6.js",
-		"./import.js",
-		"./vue.js"
-	],
+	extends: ["./import.js", "./vue.js"],
 
 	env: { browser: true },
 

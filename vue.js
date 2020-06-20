@@ -19,7 +19,8 @@
 
 const { rules: eslintRules } = require("eslint/conf/eslint-recommended.js");
 
-const { rules: styleRules } = require("./style.js");
+const { rules: styleRules } = require("./style.js"),
+	{ rules: es6Rules } = require("./es6.js");
 
 const o = "off",
 	w = "warn",
@@ -59,9 +60,9 @@ const inheritedRules = ((originalRuleList, inheritRuleList) => {
 	});
 
 	return inheritedRuleList;
-})([eslintRules, styleRules], rulesToInherit);
+})([eslintRules, styleRules, es6Rules], rulesToInherit);
 
-// This config provides rules for eslint-plugin-promise
+// This config provides rules for eslint-plugin-vue
 module.exports = {
 	parser: "vue-eslint-parser",
 
@@ -72,7 +73,7 @@ module.exports = {
 
 	plugins: ["vue"],
 
-	extends: ["plugin:vue/recommended", "./index.js"],
+	extends: ["plugin:vue/recommended", "./index.js", "./es6.js"],
 
 	rules: Object.assign({
 		// Strongly Recommended

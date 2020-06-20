@@ -1,13 +1,14 @@
 {
 	"name": "eslint-config-lux",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "An ESLint Config",
 	"main": "index.js",
 	"author": "sciencmine",
 	"license": "Apache-2.0",
 	"scripts": {
 		"lint": "eslint --ext .js --ignore-path .gitignore ./",
-		"fix": "npm run lint -- --fix"
+		"fix": "npm run lint -- --fix",
+		"prepublishOnly": "npm run fix"
 	},
 	"devDependencies": {
 		"babel-eslint": "^10.1.0",
