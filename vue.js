@@ -19,7 +19,8 @@
 
 const { rules: eslintRules } = require("eslint/conf/eslint-recommended.js");
 
-const { rules: styleRules } = require("./style.js"),
+const { rules: baseRules } = require("./base.js"),
+	{ rules: styleRules } = require("./style.js"),
 	{ rules: es6Rules } = require("./es6.js");
 
 const o = "off",
@@ -60,7 +61,12 @@ const inheritedRules = ((originalRuleList, inheritRuleList) => {
 	});
 
 	return inheritedRuleList;
-})([eslintRules, styleRules, es6Rules], rulesToInherit);
+})([
+	eslintRules,
+	baseRules,
+	styleRules,
+	es6Rules
+], rulesToInherit);
 
 // This config provides rules for eslint-plugin-vue
 module.exports = {
