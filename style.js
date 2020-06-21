@@ -96,7 +96,6 @@ module.exports = {
 		"new-parens": e,
 		"newline-per-chained-call": [w, { ignoreChainWithDepth: options.maxChainedCallPerLine }],
 		"no-lonely-if": w,
-		"no-mixed-operators": w,
 		"no-multiple-empty-lines": [w, { max: options.maxMultipleEmptyLines, maxBOF: 1, maxEOF: 1 }],
 		"no-negated-condition": w,
 		"no-tabs": o,
