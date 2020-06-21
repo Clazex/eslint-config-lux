@@ -100,7 +100,7 @@ module.exports = {
 		"vue/padding-line-between-blocks": w,
 		"vue/require-direct-export": w,
 		"vue/require-name-property": w,
-		"vue/script-indent": ["error", "tab", { switchCase: 1 }],
+		"vue/script-indent": [w, "tab", { switchCase: 1 }],
 		"vue/static-class-names-order": w,
 		"vue/v-on-function-call": w,
 		"vue/v-slot-style": w,

@@ -40,8 +40,18 @@ module.exports = {
 	},
 
 	rules: {
+		"import/first": o,
+		"import/named": e,
+		"import/namespace": e,
+		"import/default": e,
+		"import/export": e,
+		"import/extensions": o,
+		"import/no-unresolved": o,
+		"import/no-extraneous-dependencies": o,
+		"prefer-promise-reject-errors": o,
+
 		// Allow debugger during development only
-		"no-console": process.env.NODE_ENV === "production" ? w : o,
-		"no-debugger": process.env.NODE_ENV === "production" ? w : o
+		"no-console": process.env.NODE_ENV === "production" ? e : o,
+		"no-debugger": process.env.NODE_ENV === "production" ? e : o
 	}
 };

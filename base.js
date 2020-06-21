@@ -74,7 +74,6 @@ module.exports = {
 		"no-labels": e,
 		"no-lone-blocks": w,
 		"no-loop-func": w,
-		"no-magic-numbers": w,
 		"no-multi-spaces": w,
 		"no-multi-str": e,
 		"no-new": e,
