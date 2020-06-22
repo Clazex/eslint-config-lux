@@ -26,7 +26,7 @@ const o = "off",
 module.exports = {
 	parserOptions: { sourceType: "module" },
 
-	extends: ["./import.js", "./vue.js"],
+	extends: ["./import.js", "./promise.js", "./vue.js"],
 
 	env: { browser: true, commonjs: true },
 
