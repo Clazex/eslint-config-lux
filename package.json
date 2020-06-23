@@ -1,6 +1,6 @@
 {
 	"name": "eslint-config-lux",
-	"version": "0.0.9",
+	"version": "0.0.10",
 	"description": "An ESLint Config",
 	"main": "index.js",
 	"author": "sciencmine",

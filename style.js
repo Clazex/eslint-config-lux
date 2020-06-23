@@ -79,7 +79,7 @@ module.exports = {
 		"function-paren-newline": w,
 		"id-length": [w, { min: 1, max: options.maxIdLength }],
 		"implicit-arrow-linebreak": w,
-		"indent": [e, "tab", { SwitchCase: 1 }],
+		"indent": [w, "tab", { SwitchCase: 1 }],
 		"jsx-quotes": e,
 		"key-spacing": w,
 		"keyword-spacing": w,
