@@ -35,7 +35,16 @@ module.exports = {
 		// Possible Errors
 		"for-direction": o,
 		"no-await-in-loop": w,
-		"no-extra-parens": w,
+		"no-extra-parens": [
+			w,
+			"all",
+			{
+				conditionalAssign: true,
+				returnAssign: true,
+				nestedBinaryExpressions: true,
+				ignoreJSX: "multi-line"
+			}
+		],
 		"no-template-curly-in-string": w,
 		"require-atomic-updates": w,
 
