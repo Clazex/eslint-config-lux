@@ -42,7 +42,10 @@ module.exports = {
 				conditionalAssign: true,
 				returnAssign: true,
 				nestedBinaryExpressions: true,
-				ignoreJSX: "multi-line"
+				ignoreJSX: "multi-line",
+				enforceForArrowConditionals: true,
+				enforceForSequenceExpressions: true,
+				enforceForNewInMemberExpressions: true
 			}
 		],
 		"no-template-curly-in-string": w,
