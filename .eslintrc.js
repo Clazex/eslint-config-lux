@@ -10,5 +10,5 @@ module.exports = {
 
 	parserOptions: { sourceType: "script" },
 
-	extends: ["./index.js"]
+	extends: ["./index.js", "./node.js"]
 };
