@@ -2,6 +2,16 @@
 
 > An ESLint Config
 
+[![License](https://img.shields.io/github/license/Sciencmine/eslint-config-lux?label=License&logo=apache)](https://github.com/Sciencmine/eslint-config-lux/blob/master/LICENSE)
+[![Last Commit](https://badgen.net/github/last-commit/Sciencmine/eslint-config-lux?label=Last%20Commit&icon=github)](https://github.com/Sciencmine/eslint-config-lux/commits)
+[![Lint](https://img.shields.io/github/workflow/status/Sciencmine/eslint-config-lux/Lint?label=Lint&logo=github-actions&logoColor=white)](https://github.com/Sciencmine/eslint-config-lux/actions?query=workflow%3ALint)
+[![Open Issues](https://img.shields.io/github/issues-raw/Sciencmine/eslint-config-lux?label=Open%20Issues&logo=github)](https://github.com/Sciencmine/eslint-config-lux/issues?q=is%3Aissue+is%3Aopen)
+![Minified Size](https://img.shields.io/bundlephobia/min/eslint-config-lux?label=Minified%20Size)
+![Minzipped Size](https://img.shields.io/bundlephobia/minzip/eslint-config-lux?label=Minzipped%20Size)
+![Repo Size](https://img.shields.io/github/repo-size/Sciencmine/eslint-config-lux?label=Repo%20Size&logo=github)
+
+[![NPM](https://nodei.co/npm/eslint-config-lux.png?downloads=true&stars=true)](https://www.npmjs.com/package/eslint-config-lux)
+
 ## Usage
 
 1. Ensure [ESLint](https://npmjs.com/eslint) is installed, the configuration file is initiated, and the config is installed.
