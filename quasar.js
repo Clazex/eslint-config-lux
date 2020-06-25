@@ -17,6 +17,8 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable sort-vars*/
 
+const path = require("path");
+
 const o = "off",
 	w = "warn",
 	e = "error",
@@ -40,12 +42,6 @@ module.exports = {
 	},
 
 	rules: {
-		"import/first": o,
-		"import/named": e,
-		"import/namespace": e,
-		"import/default": e,
-		"import/export": e,
-		"import/extensions": o,
 		"import/no-unresolved": o,
 		"import/no-extraneous-dependencies": o,
 		"prefer-promise-reject-errors": o,
@@ -53,5 +49,37 @@ module.exports = {
 		// Allow debugger during development only
 		"no-console": process.env.NODE_ENV === "production" ? e : o,
 		"no-debugger": process.env.NODE_ENV === "production" ? e : o
-	}
+	},
+
+	overrides: [
+		{
+			files: [path.join("src", "store", "*.js"), path.join("src", "store", "*", "*.js")],
+			rules: {
+				"sort-imports": o,
+				"import/no-namespace": o,
+				"import/prefer-default-export": o
+			}
+		},
+		{
+			files: [path.join("src-electron", "*.js"), path.join("src-electron", "*", "*.js")],
+
+			parser: "babel-eslint",
+
+			parserOptions: { sourceType: "script" },
+
+			env: {
+				node: true,
+				es6: true,
+				commonjs: true
+			},
+
+			extends: [
+				"./index.js",
+				"./es6.js",
+				"./import.js",
+				"./promise.js",
+				"./node.js"
+			]
+		}
+	]
 };

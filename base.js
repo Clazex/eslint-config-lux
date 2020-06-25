@@ -35,19 +35,7 @@ module.exports = {
 		// Possible Errors
 		"for-direction": o,
 		"no-await-in-loop": w,
-		"no-extra-parens": [
-			w,
-			"all",
-			{
-				conditionalAssign: true,
-				returnAssign: true,
-				nestedBinaryExpressions: true,
-				ignoreJSX: "multi-line",
-				enforceForArrowConditionals: true,
-				enforceForSequenceExpressions: true,
-				enforceForNewInMemberExpressions: true
-			}
-		],
+		"no-extra-parens": [w, "functions"],
 		"no-template-curly-in-string": w,
 		"require-atomic-updates": w,
 
