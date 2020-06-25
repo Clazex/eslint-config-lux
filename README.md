@@ -53,7 +53,7 @@ module.exports = {
 
 		// "lux/all", // Includes all rules above, not recommended unless you know what you are doing
 
-		// "lux/quasar" // Includes settings for the Quasar Framework, requires ["babel-eslint", "eslint-plugin-import", "eslint-plugin-vue"]
+		// "lux/quasar" // Includes settings for the Quasar Framework, requires ["babel-eslint", "eslint-plugin-import", "eslint-plugin-promise", "eslint-plugin-node", "eslint-plugin-vue"]
 	]
 };
 ```
@@ -134,5 +134,6 @@ trim_trailing_whitespace = true
 
 + Others
 Please refer to [ESLint Integrations](https://eslint.org/docs/user-guide/integrations)
+Add [ESLint Plugin Vue Editor integrations](https://github.com/vuejs/eslint-plugin-vue/tree/v6.2.2/docs/user-guide#computer-editor-integrations) for Vue
 
 6. Enjoy!
