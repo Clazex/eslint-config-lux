@@ -14,9 +14,6 @@
  * 	limitations under the License.
  */
 
-/* eslint-disable no-unused-vars */
-/* eslint-disable sort-vars*/
-
 const { rules: eslintRules } = require("eslint/conf/eslint-recommended.js");
 
 const { rules: baseRules } = require("./base.js"),
@@ -70,8 +67,6 @@ const inheritedRules = ((originalRuleList, inheritRuleList) => {
 
 // This config provides rules for eslint-plugin-vue
 module.exports = {
-	parser: "vue-eslint-parser",
-
 	parserOptions: {
 		parser: "babel-eslint",
 		sourceType: "module"

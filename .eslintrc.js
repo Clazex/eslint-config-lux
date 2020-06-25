@@ -1,3 +1,7 @@
+const o = "off",
+	w = "warn",
+	e = "error";
+
 module.exports = {
 	root: true,
 
@@ -10,5 +14,10 @@ module.exports = {
 
 	parserOptions: { sourceType: "script" },
 
-	extends: ["./index.js", "./node.js"]
+	extends: ["./index.js", "./node.js"],
+	
+	rules: {
+		"no-unused-vars": o,
+		"sort-vars": o
+	}
 };

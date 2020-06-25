@@ -14,9 +14,6 @@
  * 	limitations under the License.
  */
 
-/* eslint-disable no-unused-vars */
-/* eslint-disable sort-vars*/
-
 const o = "off",
 	w = "warn",
 	e = "error",

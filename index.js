@@ -14,8 +14,5 @@
  * 	limitations under the License.
  */
 
-/* eslint-disable no-unused-vars */
-/* eslint-disable sort-vars*/
-
 // This config includes the grammatical and stylistic rules
 module.exports = { extends: ["./base.js", "./style.js"] };

@@ -14,15 +14,11 @@
  * 	limitations under the License.
  */
 
-/* eslint-disable no-unused-vars */
-/* eslint-disable sort-vars*/
-
 const path = require("path");
 
 const o = "off",
 	w = "warn",
-	e = "error",
-	options = {};
+	e = "error";
 
 // This config provides a preset for the Quasar Framework
 module.exports = {

@@ -14,13 +14,9 @@
  * 	limitations under the License.
  */
 
-/* eslint-disable no-unused-vars */
-/* eslint-disable sort-vars*/
-
 const o = "off",
 	w = "warn",
-	e = "error",
-	options = {};
+	e = "error";
 
 // This config provides rules for eslint-plugin-promise
 module.exports = {
