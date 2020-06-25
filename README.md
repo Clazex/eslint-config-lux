@@ -132,4 +132,7 @@ insert_final_newline = true
 trim_trailing_whitespace = true
 ```
 
++ Others
+Please refer to [ESLint Integrations](https://eslint.org/docs/user-guide/integrations)
+
 6. Enjoy!
