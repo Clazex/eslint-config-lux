@@ -1,0 +1,40 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "build",
+			"group": "build",
+			"problemMatcher": [],
+			"label": "npm: build"
+		},
+		{
+			"type": "npm",
+			"script": "clean",
+			"problemMatcher": [],
+			"label": "npm: clean"
+		},
+		{
+			"type": "npm",
+			"script": "lint",
+			"problemMatcher": [
+				"$eslint-stylish"
+			],
+			"label": "npm: lint"
+		},
+		{
+			"type": "npm",
+			"script": "fix",
+			"problemMatcher": [
+				"$eslint-stylish"
+			],
+			"label": "npm: fix"
+		},
+		{
+			"type": "npm",
+			"script": "install",
+			"problemMatcher": [],
+			"label": "npm: install"
+		}
+	]
+}

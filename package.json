@@ -1,50 +1,84 @@
 {
 	"name": "eslint-config-lux",
-	"version": "0.0.13",
+	"version": "0.0.14",
 	"description": "An ESLint Config",
+	"author": "Clazex <clazex.y@gmail.com>",
+	"license": "AGPL-3.0-or-later",
 	"main": "index.js",
-	"author": "sciencmine",
-	"license": "Apache-2.0",
+	"private": true,
 	"scripts": {
+		"build": "node scripts/build",
+		"clear": "node scripts/clear",
+		"commit": "git-cz",
 		"lint": "eslint --ext .js --ignore-path .gitignore ./",
-		"fix": "npm run lint -- --fix",
-		"prepublishOnly": "npm run fix"
+		"fix": "npm run lint -- --fix"
+	},
+	"config": {
+		"commitizen": {
+			"path": "@commitlint/prompt"
+		}
+	},
+	"dependencies": {
+		"eslint-config-standard": "^16.0.2"
 	},
 	"devDependencies": {
-		"babel-eslint": "^10.1.0",
-		"eslint": "^6.8.0",
-		"eslint-plugin-import": "^2.21.2",
+		"@babel/core": "^7.12.13",
+		"@babel/eslint-parser": "^7.12.13",
+		"@babel/eslint-plugin": "^7.12.13",
+		"@babel/preset-env": "^7.12.13",
+		"@commitlint/cli": "^11.0.0",
+		"@commitlint/config-conventional": "^12.1.1",
+		"@commitlint/prompt": "^12.1.1",
+		"commitizen": "^4.2.3",
+		"conventional-changelog-cli": "^2.1.1",
+		"eslint": "^7.19.0",
+		"eslint-plugin-es": "^4",
+		"eslint-plugin-import": "^2.22.1",
 		"eslint-plugin-node": "^11.1.0",
 		"eslint-plugin-promise": "^4.2.1",
-		"eslint-plugin-vue": "^6.2.2"
+		"eslint-plugin-vue": "^7.5.0",
+		"fs-extra": "^9.1.0",
+		"husky": "^4.3.8",
+		"lint-staged": "^10.5.3"
 	},
 	"peerDependencies": {
-		"babel-eslint": "^10.1.0",
-		"eslint": "^6.8.0",
-		"eslint-plugin-import": "^2.21.2",
+		"@babel/eslint-plugin": "^7.12.13",
+		"eslint": "^7.19.0",
+		"eslint-plugin-es": "^4.1.0",
+		"eslint-plugin-import": "^2.22.1",
 		"eslint-plugin-node": "^11.1.0",
 		"eslint-plugin-promise": "^4.2.1",
-		"eslint-plugin-vue": "^6.2.2"
+		"eslint-plugin-vue": "^7.5.0"
 	},
+	"peerDependenciesMeta": {
+		"eslint-plugin-es": {
+			"optional": true
+		},
+		"eslint-plugin-import": {
+			"optional": true
+		},
+		"eslint-plugin-node": {
+			"optional": true
+		},
+		"eslint-plugin-promise": {
+			"optional": true
+		},
+		"eslint-plugin-vue": {
+			"optional": true
+		}
+	},
+	"homepage": "https://github.com/Clazex/eslint-config-lux#readme",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/Sciencmine/eslint-config-lux.git"
+		"url": "git+https://github.com/Clazex/eslint-config-lux.git"
 	},
 	"bugs": {
-		"url": "https://github.com/Sciencmine/eslint-config-lux/issues"
+		"url": "https://github.com/Clazex/eslint-config-lux/issues"
 	},
-	"files": [
-		"index.js",
-		"all.js",
-		"base.js",
-		"style.js",
-		"es6.js",
-		"import.js",
-		"node.js",
-		"promise.js",
-		"vue.js",
-		"quasar.js"
-	],
+	"engines": {
+		"node": ">=14",
+		"npm": ">=7.1.2"
+	},
 	"keywords": [
 		"eslint",
 		"eslintconfig"
