@@ -22,7 +22,8 @@ module.exports = clearPromise
 					"private",
 					"scripts",
 					"config",
-					"commitlint"
+					"commitlint",
+					"lint-staged"
 				].forEach((i) => Reflect.deleteProperty(obj, i));
 
 				return obj;
