@@ -1,9 +1,13 @@
-module.exports = {
-	presets: [
-		[ "@babel/preset-env", {
-			targets: {
-				node: "14"
-			}
-		}]
-	]
+module.exports = function configure(api) {
+	api.cache.forever();
+
+	return {
+		targets: {
+			node: "14"
+		},
+
+		presets: [
+			"@babel/preset-env"
+		]
+	};
 };

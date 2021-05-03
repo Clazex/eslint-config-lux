@@ -1,11 +1,16 @@
 {
-	"compilerOptions": {
-		"checkJs": true,
-		"module": "commonjs",
-		"moduleResolution": "node",
-		"target": "es2019"
-	},
 	"include": [
 		"src/**/*"
-	]
+	],
+	"compilerOptions": {
+		"checkJs": true,
+		"lib": [
+			"ES2020"
+		],
+		"module": "commonjs",
+		"moduleResolution": "node",
+		"skipLibCheck": true,
+		"strict": true,
+		"target": "ES2020"
+	}
 }

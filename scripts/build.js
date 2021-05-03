@@ -21,11 +21,12 @@ module.exports = clearPromise
 				[
 					"private",
 					"scripts",
-					"config"
+					"config",
+					"commitlint"
 				].forEach((i) => Reflect.deleteProperty(obj, i));
 
 				return obj;
 			})
-			.then((obj) => writeJson("./dist/package.json", obj, { spaces: 2 }))
+			.then((obj) => writeJson("./dist/package.json", obj, { spaces: "\t" }))
 	]))
 	.catch(console.error);

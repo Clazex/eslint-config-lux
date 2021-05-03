@@ -1,8 +1,8 @@
 # Common
-.history
 desktop.ini
-thumbs.db
+Thumbs.db
 .DS_Store
+.history/
 /dist/
 
 # Logs
