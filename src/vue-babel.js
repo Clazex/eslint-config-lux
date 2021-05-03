@@ -1,12 +1,21 @@
 module.exports = {
 	extends: [
-		"./vue.js",
 		"./babel.js"
 	],
 
-	parser: "vue-eslint-parser",
+	overrides: [
+		{
+			files: [ "*.vue" ],
 
-	parserOptions: {
-		parser: "@babel/eslint-parser"
-	}
+			extends: [
+				"./vue.js"
+			],
+
+			parser: "vue-eslint-parser",
+
+			parserOptions: {
+				parser: "@babel/eslint-parser"
+			}
+		}
+	]
 };
